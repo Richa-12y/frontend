@@ -1,0 +1,210 @@
+*{
+     margin: 0;
+     padding: 0;
+     outline: 0;
+     box-sizing: border-box;
+}
+
+.container{
+     display: flex;
+     flex-direction: column;
+     position: relative;
+}
+.navbar-container{
+     position: fixed;
+     display: flex;
+     flex-direction: row;
+     /* background-color: aqua; */
+     width: 100%;
+     min-height: 10vh;
+     justify-content: space-between;
+     align-items: center;
+     z-index: 1;
+     cursor: pointer;
+}
+[alt="brand-logo"]{
+     width: 100px;
+     height: 30px;
+     
+}
+[alt="brand-logo"]{
+     margin-left: 7em;
+}
+.list{
+     display: flex;
+     flex-direction: row;
+     text-decoration: none;
+     list-style: none;
+     position: relative;
+     font-family: Orbitron;
+
+}
+svg{
+     width: 20px;height: 20px;
+}
+.list>li{
+     padding-left: 2em;
+     font-size: 1em;
+     cursor: pointer;
+
+}
+ul>li:nth-child(1)::after{
+     content: "";
+     width: 30px;
+     height: 2px;
+     background-color: black;
+     position: absolute;
+     bottom: -2%;
+     left: 10%;
+     
+}
+ul>li:nth-child(1){
+     font-weight: bolder;
+     
+}
+
+.button-group{
+     display: flex;
+     flex-direction: row;
+     margin-right:10%;
+     align-items: center;
+}
+.nav-button{
+     padding: 0.5em 2em 0.5em 2em;
+     outline: none;
+     border-radius: 10px;
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: center;
+     margin-left: 1em;
+     cursor: pointer;
+
+}
+.hero-container{
+     position: absolute;
+     top: 10vh;
+     min-height: calc(100vh-10vh);
+     cursor: pointer;
+
+}
+[alt="person-hero-iamge"]{
+     position: absolute;
+     top: 10vh;
+     width: 300px;
+     z-index: -1;
+     left: 7em;
+}
+[alt="square-pattern"]{
+     position: absolute;
+     top: 32vh;
+     width: 300px;
+     left: 10.5em;
+     z-index: -2;
+}
+[alt="globe-pattern" ]{
+     position: absolute;
+     top: 5vh;
+     width: 40px;
+     left: 650px;
+}
+[alt="start-pattern" ]{
+     position: absolute;
+     top: 10vh;
+     left:1070px ;
+     width: 50px;
+}
+.hero-container-right{
+     position: absolute;
+     top: 150px;
+     left: 550px;
+     width: 40vw;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+    
+}
+.hero-container-right h1{
+     font-weight:bolder;
+   
+     font-size: 2.35em;
+     font-family: Orbitron;
+}
+.hero-container-right  p{
+     margin-top: 20px;
+     font-size: 0.8em;
+     text-align: center;
+     width: 500px;
+     font-family: Poppins;
+}
+.button-email{
+     padding: 0.2em 1em 0.2em 1em;
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: space-between;
+     outline: none;
+     /* border: none; */
+     border-radius: 7px;
+     font-family: Orbitron;
+     font-size: smaller;
+     background-color: transparent;
+     cursor: pointer;
+
+}
+.button-join{
+     padding: 0.2em 0.2em 0.2em 0.1em;
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: space-between;
+     outline: none;
+     border-radius: 7px;
+     font-family: Orbitron;
+     font-size: smaller;
+     background-color: black;
+     color: white;
+     cursor: pointer;
+
+}
+.hero-description+div{
+     /* background-color: aqua; */
+     width: 230px;
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     margin-top: 60px;
+     cursor: pointer;
+
+}
+.hero-description+div+div{
+     /* background-color: blue; */
+     bottom: -60%;
+     position: absolute;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+     align-items: center;
+     height: 75px;
+     width: 210px;
+}
+.icons{
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     width: 100%;
+}
+.hero-container-right::before{
+     content: '';
+     width: 35px;
+     height: 35px;
+     position: absolute;
+     border-radius: 50%;
+     background-image: url("/assets/start.png");
+     top:250px;
+     left:25px;
+     background-repeat: no-repeat;
+     background-size: contain;
+     cursor: pointer;
+
+}
